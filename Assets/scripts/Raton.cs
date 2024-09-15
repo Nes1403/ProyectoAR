@@ -15,7 +15,7 @@ public class Raton : MonoBehaviour{
         GameObject tirador = GameObject.FindGameObjectWithTag("Jugador");
         Vector3 posicionSuelo = new Vector3(tirador.transform.position.x, transform.position.y, tirador.transform.position.z);
         Vector3 direccionTiradorSuelo= posicionSuelo - transform.position;
-        transform.forward = direccionTiradorSuelo;
+        transform.right = -direccionTiradorSuelo.normalized;
         transform.position += Vector3.Normalize(posicionSuelo - transform.position) * velocidad * Time.deltaTime;
     }
 

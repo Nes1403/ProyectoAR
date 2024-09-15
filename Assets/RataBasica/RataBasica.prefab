@@ -313,7 +313,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2736198368131379712}
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0.07559588, y: -0.040446203, z: 0}
+  m_LocalPosition: {x: 0.075595856, y: -0.040446203, z: 0}
   m_LocalScale: {x: 4.320842, y: 4.320842, z: 4.320842}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -322,7 +322,7 @@ Transform:
   - {fileID: 343447009700821092}
   - {fileID: 656891754889392225}
   m_Father: {fileID: 4888643013689338068}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 90, z: 0}
 --- !u!1 &2865400020880913846
 GameObject:
@@ -539,13 +539,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4076921061081363732}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4964486, y: 0.49644858, z: 0.49644864}
+  m_LocalScale: {x: 0.4964486, y: 0.4964486, z: 0.49644864}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4888643013689338068}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &8638211859375516100
 SkinnedMeshRenderer:
@@ -862,7 +862,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4888643013689338068}
   - component: {fileID: 4968886192986800932}
-  - component: {fileID: 7878605504094789684}
+  - component: {fileID: 3890419207665484400}
+  - component: {fileID: 3525742681660500499}
   m_Layer: 0
   m_Name: RataBasica
   m_TagString: Untagged
@@ -882,8 +883,8 @@ Transform:
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 4568664024896387146}
   - {fileID: 2343824374792286601}
+  - {fileID: 4568664024896387146}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -900,7 +901,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.15, z: 0.25}
   m_Center: {x: 0.06, y: -0.01, z: 0.05}
---- !u!114 &7878605504094789684
+--- !u!114 &3890419207665484400
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -914,7 +915,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   salud: 1
   miniRata: {fileID: 0}
-  velocidad: 0.2
+  velocidad: 0.1
+--- !u!95 &3525742681660500499
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5232094559228768878}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 8faea1953d7e0d8469eca4019cc74e8d, type: 3}
+  m_Controller: {fileID: 9100000, guid: 6dbda23e21ddc944cbcfa459194c523d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5329357732535961075
 GameObject:
   m_ObjectHideFlags: 0
