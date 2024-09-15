@@ -1,0 +1,11 @@
+# Archivos y carpetas generados automáticamente por Unity
+Temp/
+Library/
+Logs/
+obj/
+*.csproj
+*.sln
+*.user
+
+# Archivos de configuración de usuario de Unity
+.vs/
