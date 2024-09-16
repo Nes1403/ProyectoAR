@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6012675312563595811}
   - component: {fileID: 9111305984491067507}
   - component: {fileID: 4346289628923258616}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Suelo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3318369402402870072}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cheese
   m_TagString: Jugador
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 3676163245771584276}
   - component: {fileID: 2966907943179996593}
   - component: {fileID: 4281175589467576594}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cheese
   m_TagString: 0.01
   m_Icon: {fileID: 0}
@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 3378199278555199190}
   - component: {fileID: 7809223845046679190}
   - component: {fileID: 8202718726231588442}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

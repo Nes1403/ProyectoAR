@@ -24,8 +24,10 @@ public class Raton : MonoBehaviour{
         if(salud <= 0){
             Destroy(gameObject);
             if(miniRata != null){
-            Instantiate(miniRata, transform.position, transform.rotation);
-            Instantiate(miniRata, transform.position, transform.rotation);
+            Vector3 desplazamientoIzquierda = new Vector3(-0.1f, 0f, -0.1f);
+            Vector3 desplazamientoDerecha = new Vector3(0.1f, 0f, 0.1f);
+            Instantiate(miniRata, transform.position + desplazamientoIzquierda, transform.rotation);
+            Instantiate(miniRata, transform.position + desplazamientoDerecha, transform.rotation);
             }
         }
     }

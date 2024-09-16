@@ -1,5 +1,4 @@
 using UnityEngine;
-using TMPro;
 using System.Collections.Generic;
 
 public class Spawner : MonoBehaviour
@@ -9,8 +8,6 @@ public class Spawner : MonoBehaviour
     public GameObject enemigoPrefabOleada5;
     public Transform puntoCentral;
     public float radio;
-
-    public TextMeshProUGUI mensajeOleadaUI;
 
     private float tiempoEntreOleadas = 3f;
     private float tiempoUltimoMensaje = 0f;
@@ -26,18 +23,15 @@ public class Spawner : MonoBehaviour
         {
             if (!mostrandoMensaje)
             {
-                // Iniciar la cuenta atrás para mostrar el mensaje
+                // Iniciar la cuenta atrás
                 tiempoUltimoMensaje = Time.time;
                 mostrandoMensaje = true;
-                mensajeOleadaUI.text = "¡Prepárate para la Oleada " + numeroOleada + "!";
-                mensajeOleadaUI.gameObject.SetActive(true);
             }
             else
             {
-                // Controlar el tiempo de espera del mensaje
+                // Controlar el tiempo de espera
                 if (Time.time - tiempoUltimoMensaje >= tiempoEntreOleadas)
                 {
-                    mensajeOleadaUI.gameObject.SetActive(false);
                     GenerarOleada();
                     numeroOleada++;
                     mostrandoMensaje = false;
@@ -72,12 +66,21 @@ public class Spawner : MonoBehaviour
                 InstanciarEnemigo(enemigoPrefabOleada5);
             }
         }
+        #if UNITY_ANDROID || UNITY_IOS
+        Handheld.Vibrate();
+        #endif
     }
 
     void InstanciarEnemigo(GameObject prefab)
     {
-        Vector3 posicionAleatoria = puntoCentral.position + Random.onUnitSphere * radio;
+        Vector2 puntoAleatorio = Random.insideUnitCircle * radio;
+        Vector3 posicionAleatoria = new Vector3(puntoAleatorio.x, 0, puntoAleatorio.y) + puntoCentral.position;
         posicionAleatoria.y = puntoCentral.position.y + 0.1f;
+
+        if (Vector3.Distance(puntoCentral.position, posicionAleatoria) < 1f)
+        {
+            posicionAleatoria += (posicionAleatoria - puntoCentral.position).normalized * 2f; 
+        }
 
         GameObject nuevoEnemigo = Instantiate(prefab, posicionAleatoria, Quaternion.identity);
         enemigosVivos.Add(nuevoEnemigo);
