@@ -510,7 +510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   salud: 1
   miniRata: {fileID: 0}
-  velocidad: 0.16
+  velocidad: 0.2
 --- !u!95 &1832185245505037239
 Animator:
   serializedVersion: 4

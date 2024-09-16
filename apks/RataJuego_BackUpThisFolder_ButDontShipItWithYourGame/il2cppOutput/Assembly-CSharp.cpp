@@ -2012,13 +2012,6 @@ inline void InstanceActionInvoker_2__ctor_m1B0A460C06946632B75969EE85864F4B5187A
 {
 	((  void (*) (InstanceActionInvoker_2_t27476A5754CC4EA1D7F55D8F6FB3E14E1ECB77EC*, MethodInfo_t*, const RuntimeMethod*))InstanceActionInvoker_2__ctor_mD68F2B9AEDFB2511C2CCCF5B82C05048F56ADDD5_gshared)(__this, ___methodInfo0, method);
 }
-// UnityEngine.Touch UnityEngine.Input::GetTouch(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Touch_t03E51455ED508492B3F278903A0114FA0E87B417 Input_GetTouch_m37572A728DAE284D3ED1272690E635A61D167AD4 (int32_t ___index0, const RuntimeMethod* method) ;
-// System.Void Unity.VisualScripting.StaticFunctionInvoker`2<System.Int32,UnityEngine.Touch>::.ctor(System.Reflection.MethodInfo)
-inline void StaticFunctionInvoker_2__ctor_mBD16444C3B4674226839B0AA5FC7D9A4159FCCB2 (StaticFunctionInvoker_2_tA8EB4EAD4A6B3AD3C481CBF489944A36BEB93097* __this, MethodInfo_t* ___methodInfo0, const RuntimeMethod* method)
-{
-	((  void (*) (StaticFunctionInvoker_2_tA8EB4EAD4A6B3AD3C481CBF489944A36BEB93097*, MethodInfo_t*, const RuntimeMethod*))StaticFunctionInvoker_2__ctor_mBD16444C3B4674226839B0AA5FC7D9A4159FCCB2_gshared)(__this, ___methodInfo0, method);
-}
 // UnityEngine.Vector2 UnityEngine.Touch::get_position()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Touch_get_position_m41B9EB0F3F3E1BE98CEB388253A9E31979CB964A (Touch_t03E51455ED508492B3F278903A0114FA0E87B417* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Touch::set_position(UnityEngine.Vector2)
@@ -2029,6 +2022,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReflectionPropertyAccessor__ctor_m6D9ACC
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ReflectionPropertyAccessor_GetValue_m24E6DB4D752CA9ECF169145015DFFBB9E830FFC5 (ReflectionPropertyAccessor_t0C937004E72565DA828254F2508612F32D692A42* __this, RuntimeObject* ___target0, const RuntimeMethod* method) ;
 // System.Void Unity.VisualScripting.ReflectionPropertyAccessor::SetValue(System.Object,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReflectionPropertyAccessor_SetValue_m864D0F0A46C817DF7D444F569A3352930481828D (ReflectionPropertyAccessor_t0C937004E72565DA828254F2508612F32D692A42* __this, RuntimeObject* ___target0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
+// UnityEngine.Touch UnityEngine.Input::GetTouch(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Touch_t03E51455ED508492B3F278903A0114FA0E87B417 Input_GetTouch_m37572A728DAE284D3ED1272690E635A61D167AD4 (int32_t ___index0, const RuntimeMethod* method) ;
+// System.Void Unity.VisualScripting.StaticFunctionInvoker`2<System.Int32,UnityEngine.Touch>::.ctor(System.Reflection.MethodInfo)
+inline void StaticFunctionInvoker_2__ctor_mBD16444C3B4674226839B0AA5FC7D9A4159FCCB2 (StaticFunctionInvoker_2_tA8EB4EAD4A6B3AD3C481CBF489944A36BEB93097* __this, MethodInfo_t* ___methodInfo0, const RuntimeMethod* method)
+{
+	((  void (*) (StaticFunctionInvoker_2_tA8EB4EAD4A6B3AD3C481CBF489944A36BEB93097*, MethodInfo_t*, const RuntimeMethod*))StaticFunctionInvoker_2__ctor_mBD16444C3B4674226839B0AA5FC7D9A4159FCCB2_gshared)(__this, ___methodInfo0, method);
+}
 // UnityEngine.Vector3 UnityEngine.Transform::get_position()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Transform::set_position(UnityEngine.Vector3)
@@ -42517,45 +42517,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AotStubs_UnityEngine_XR_ARFoundation_ARP
 		return;
 	}
 }
-// System.Void Unity.VisualScripting.Generated.Aot.AotStubs::UnityEngine_Input_GetTouch()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AotStubs_UnityEngine_Input_GetTouch_m3F08FA44B4692433FA0AE003A41102901BDFF595 (const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StaticFunctionInvoker_2__ctor_mBD16444C3B4674226839B0AA5FC7D9A4159FCCB2_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StaticFunctionInvoker_2_tA8EB4EAD4A6B3AD3C481CBF489944A36BEB93097_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	{
-		// int arg0 = default(int);
-		V_0 = 0;
-		// global::UnityEngine.Input.GetTouch(arg0);
-		int32_t L_0 = V_0;
-		Touch_t03E51455ED508492B3F278903A0114FA0E87B417 L_1;
-		L_1 = Input_GetTouch_m37572A728DAE284D3ED1272690E635A61D167AD4(L_0, NULL);
-		// global::Unity.VisualScripting.StaticFunctionInvoker<int, UnityEngine.Touch> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<int, UnityEngine.Touch>(default(global::System.Reflection.MethodInfo));
-		StaticFunctionInvoker_2_tA8EB4EAD4A6B3AD3C481CBF489944A36BEB93097* L_2 = (StaticFunctionInvoker_2_tA8EB4EAD4A6B3AD3C481CBF489944A36BEB93097*)il2cpp_codegen_object_new(StaticFunctionInvoker_2_tA8EB4EAD4A6B3AD3C481CBF489944A36BEB93097_il2cpp_TypeInfo_var);
-		NullCheck(L_2);
-		StaticFunctionInvoker_2__ctor_mBD16444C3B4674226839B0AA5FC7D9A4159FCCB2(L_2, (MethodInfo_t*)NULL, StaticFunctionInvoker_2__ctor_mBD16444C3B4674226839B0AA5FC7D9A4159FCCB2_RuntimeMethod_var);
-		// optimized.Invoke(null, arg0);
-		StaticFunctionInvoker_2_tA8EB4EAD4A6B3AD3C481CBF489944A36BEB93097* L_3 = L_2;
-		int32_t L_4 = V_0;
-		int32_t L_5 = L_4;
-		RuntimeObject* L_6 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_5);
-		NullCheck(L_3);
-		RuntimeObject* L_7;
-		L_7 = VirtualFuncInvoker2< RuntimeObject*, RuntimeObject*, RuntimeObject* >::Invoke(15 /* System.Object Unity.VisualScripting.InvokerBase::Invoke(System.Object,System.Object) */, L_3, NULL, L_6);
-		// optimized.Invoke(default(object[]));
-		NullCheck(L_3);
-		RuntimeObject* L_8;
-		L_8 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(14 /* System.Object Unity.VisualScripting.InvokerBase::Invoke(System.Object) */, L_3, NULL);
-		// }
-		return;
-	}
-}
 // System.Void Unity.VisualScripting.Generated.Aot.AotStubs::UnityEngine_Touch_position()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AotStubs_UnityEngine_Touch_position_mA4003CF1216EB412ACF8E8A32DC942FAA202BB1C (const RuntimeMethod* method) 
 {
@@ -42607,6 +42568,45 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AotStubs_UnityEngine_Touch_position_mA40
 		RuntimeObject* L_13 = Box(Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var, &L_12);
 		NullCheck(L_3);
 		ReflectionPropertyAccessor_SetValue_m864D0F0A46C817DF7D444F569A3352930481828D(L_3, L_10, L_13, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Unity.VisualScripting.Generated.Aot.AotStubs::UnityEngine_Input_GetTouch()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AotStubs_UnityEngine_Input_GetTouch_m3F08FA44B4692433FA0AE003A41102901BDFF595 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StaticFunctionInvoker_2__ctor_mBD16444C3B4674226839B0AA5FC7D9A4159FCCB2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StaticFunctionInvoker_2_tA8EB4EAD4A6B3AD3C481CBF489944A36BEB93097_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// int arg0 = default(int);
+		V_0 = 0;
+		// global::UnityEngine.Input.GetTouch(arg0);
+		int32_t L_0 = V_0;
+		Touch_t03E51455ED508492B3F278903A0114FA0E87B417 L_1;
+		L_1 = Input_GetTouch_m37572A728DAE284D3ED1272690E635A61D167AD4(L_0, NULL);
+		// global::Unity.VisualScripting.StaticFunctionInvoker<int, UnityEngine.Touch> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<int, UnityEngine.Touch>(default(global::System.Reflection.MethodInfo));
+		StaticFunctionInvoker_2_tA8EB4EAD4A6B3AD3C481CBF489944A36BEB93097* L_2 = (StaticFunctionInvoker_2_tA8EB4EAD4A6B3AD3C481CBF489944A36BEB93097*)il2cpp_codegen_object_new(StaticFunctionInvoker_2_tA8EB4EAD4A6B3AD3C481CBF489944A36BEB93097_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		StaticFunctionInvoker_2__ctor_mBD16444C3B4674226839B0AA5FC7D9A4159FCCB2(L_2, (MethodInfo_t*)NULL, StaticFunctionInvoker_2__ctor_mBD16444C3B4674226839B0AA5FC7D9A4159FCCB2_RuntimeMethod_var);
+		// optimized.Invoke(null, arg0);
+		StaticFunctionInvoker_2_tA8EB4EAD4A6B3AD3C481CBF489944A36BEB93097* L_3 = L_2;
+		int32_t L_4 = V_0;
+		int32_t L_5 = L_4;
+		RuntimeObject* L_6 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_5);
+		NullCheck(L_3);
+		RuntimeObject* L_7;
+		L_7 = VirtualFuncInvoker2< RuntimeObject*, RuntimeObject*, RuntimeObject* >::Invoke(15 /* System.Object Unity.VisualScripting.InvokerBase::Invoke(System.Object,System.Object) */, L_3, NULL, L_6);
+		// optimized.Invoke(default(object[]));
+		NullCheck(L_3);
+		RuntimeObject* L_8;
+		L_8 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(14 /* System.Object Unity.VisualScripting.InvokerBase::Invoke(System.Object) */, L_3, NULL);
 		// }
 		return;
 	}

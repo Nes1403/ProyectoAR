@@ -259,6 +259,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   salud: 1
   gameOverText: {fileID: 0}
+  mensajePrefab: {fileID: 1625127941473344117, guid: ab820a29bfd561b418cede5a263d75d5,
+    type: 3}
 --- !u!54 &4281175589467576594
 Rigidbody:
   m_ObjectHideFlags: 0

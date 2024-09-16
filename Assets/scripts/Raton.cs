@@ -7,7 +7,6 @@ public class Raton : MonoBehaviour{
     public int salud;
 
     public GameObject miniRata;
-
     public float velocidad;
 
 

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using TMPro;
 
 public class Spawner : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class Spawner : MonoBehaviour
     public GameObject enemigoPrefabOleada5;
     public Transform puntoCentral;
     public float radio;
+    public GameObject mensajePrefab; // Prefab con un Canvas y un TextMeshProUGUI
 
     private float tiempoEntreOleadas = 3f;
     private float tiempoUltimoMensaje = 0f;
@@ -26,6 +28,7 @@ public class Spawner : MonoBehaviour
                 // Iniciar la cuenta atrás
                 tiempoUltimoMensaje = Time.time;
                 mostrandoMensaje = true;
+                MostrarMensajeOleada();
             }
             else
             {
@@ -38,6 +41,14 @@ public class Spawner : MonoBehaviour
                 }
             }
         }
+    }
+
+    void MostrarMensajeOleada()
+    {
+        GameObject mensaje = Instantiate(mensajePrefab);
+        TextMeshProUGUI texto = mensaje.GetComponentInChildren<TextMeshProUGUI>();
+        texto.text = "Preparate para la Oleada " + numeroOleada + "!";
+        Destroy(mensaje, tiempoEntreOleadas); // Destruye el Canvas después de un tiempo
     }
 
     void GenerarOleada()

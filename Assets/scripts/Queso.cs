@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI; 
-
+using TMPro;
 using UnityEngine;
 
 public class Queso : MonoBehaviour
 {
     public int salud;
     public Text gameOverText;
+    public GameObject mensajePrefab;
 
 
     private void Start()
@@ -20,7 +21,6 @@ public class Queso : MonoBehaviour
     public void OnCollisionEnter(Collision collision){
         if(collision.collider.TryGetComponent(out Raton atacable)){
             salud -= 1;
-            atacable.RecibirDano(10000);
             if(salud <= 0){
                 Destroy(gameObject);
                 GameOver();
@@ -32,6 +32,8 @@ public class Queso : MonoBehaviour
     void GameOver()
     {
         Time.timeScale = 0;
-        gameOverText.gameObject.SetActive(true);
+        GameObject mensaje = Instantiate(mensajePrefab);
+        TextMeshProUGUI texto = mensaje.GetComponentInChildren<TextMeshProUGUI>();
+        texto.text = "Game Over";
     }
 }

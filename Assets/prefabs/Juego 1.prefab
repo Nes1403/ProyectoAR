@@ -56,6 +56,8 @@ MonoBehaviour:
     type: 3}
   puntoCentral: {fileID: 3230403440117136089}
   radio: 2.5
+  mensajePrefab: {fileID: 1625127941473344117, guid: ab820a29bfd561b418cede5a263d75d5,
+    type: 3}
 --- !u!1001 &205342265875245537
 PrefabInstance:
   m_ObjectHideFlags: 0
