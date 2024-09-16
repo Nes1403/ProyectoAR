@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Jugador
+  - 0.01
+  - Ignite
+  - queso
+  - bala
   layers:
   - Default
   - TransparentFX
@@ -12,9 +16,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - QuesoLayer
+  - BalaLayer
+  - RataLayer
   - 
   - 
   - 

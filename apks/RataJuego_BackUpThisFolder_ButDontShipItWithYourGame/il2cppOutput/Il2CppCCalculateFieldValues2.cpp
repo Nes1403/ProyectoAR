@@ -2662,8 +2662,8 @@ struct U3CU3Ec_t128F854E12B07991C2212D19A23AAF1DB0F982CE_StaticFields
 {
 	// Spawner/<>c Spawner/<>c::<>9
 	U3CU3Ec_t128F854E12B07991C2212D19A23AAF1DB0F982CE* ___U3CU3E9_0;
-	// System.Predicate`1<UnityEngine.GameObject> Spawner/<>c::<>9__10_0
-	Predicate_1_t0729156EF7F8B2C367BA6C92C091D97CDEC0B53F* ___U3CU3E9__10_0_1;
+	// System.Predicate`1<UnityEngine.GameObject> Spawner/<>c::<>9__11_0
+	Predicate_1_t0729156EF7F8B2C367BA6C92C091D97CDEC0B53F* ___U3CU3E9__11_0_1;
 };
 
 // UnityEngine.TextCore.Text.SpriteAsset/<>c
@@ -13735,14 +13735,18 @@ struct Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7  : public MonoBehaviour
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___puntoCentral_7;
 	// System.Single Spawner::radio
 	float ___radio_8;
-	// System.Single Spawner::intervaloGeneracion
-	float ___intervaloGeneracion_9;
-	// System.Single Spawner::tiempoUltimaGeneracion
-	float ___tiempoUltimaGeneracion_10;
+	// TMPro.TextMeshProUGUI Spawner::mensajeOleadaUI
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___mensajeOleadaUI_9;
+	// System.Single Spawner::tiempoEntreOleadas
+	float ___tiempoEntreOleadas_10;
+	// System.Single Spawner::tiempoUltimoMensaje
+	float ___tiempoUltimoMensaje_11;
 	// System.Int32 Spawner::numeroOleada
-	int32_t ___numeroOleada_11;
+	int32_t ___numeroOleada_12;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> Spawner::enemigosVivos
-	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___enemigosVivos_12;
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___enemigosVivos_13;
+	// System.Boolean Spawner::mostrandoMensaje
+	bool ___mostrandoMensaje_14;
 };
 
 // TMPro.Examples.TMP_ExampleScript_01
@@ -14896,10 +14900,10 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6096[3] =
 	static_cast<int32_t>(offsetof(Raton_t7CA01B65A6E06A885C87002F38E2DD5EACD75439, ___salud_4)),static_cast<int32_t>(offsetof(Raton_t7CA01B65A6E06A885C87002F38E2DD5EACD75439, ___miniRata_5)),static_cast<int32_t>(offsetof(Raton_t7CA01B65A6E06A885C87002F38E2DD5EACD75439, ___velocidad_6)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6097[2] = 
 {
-	static_cast<int32_t>(offsetof(U3CU3Ec_t128F854E12B07991C2212D19A23AAF1DB0F982CE_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_t128F854E12B07991C2212D19A23AAF1DB0F982CE_StaticFields, ___U3CU3E9__10_0_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6098[9] = 
+	static_cast<int32_t>(offsetof(U3CU3Ec_t128F854E12B07991C2212D19A23AAF1DB0F982CE_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_t128F854E12B07991C2212D19A23AAF1DB0F982CE_StaticFields, ___U3CU3E9__11_0_1)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6098[11] = 
 {
-	static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___enemigoPrefab_4)),static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___enemigoPrefabOleada3_5)),static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___enemigoPrefabOleada5_6)),static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___puntoCentral_7)),static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___radio_8)),static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___intervaloGeneracion_9)),static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___tiempoUltimaGeneracion_10)),static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___numeroOleada_11)),static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___enemigosVivos_12)),};
+	static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___enemigoPrefab_4)),static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___enemigoPrefabOleada3_5)),static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___enemigoPrefabOleada5_6)),static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___puntoCentral_7)),static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___radio_8)),static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___mensajeOleadaUI_9)),static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___tiempoEntreOleadas_10)),static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___tiempoUltimoMensaje_11)),static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___numeroOleada_12)),static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___enemigosVivos_13)),static_cast<int32_t>(offsetof(Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7, ___mostrandoMensaje_14)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6099[2] = 
 {
 	static_cast<int32_t>(offsetof(Tirador_tF3E2C6AF18211376BA3E4080D0EE927EF46D687B, ___prefabBala_4)),static_cast<int32_t>(offsetof(Tirador_tF3E2C6AF18211376BA3E4080D0EE927EF46D687B, ___velocidad_5)),};

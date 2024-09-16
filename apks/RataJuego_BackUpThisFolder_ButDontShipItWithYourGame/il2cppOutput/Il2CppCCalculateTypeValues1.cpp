@@ -5501,8 +5501,8 @@ struct U3CU3Ec_t128F854E12B07991C2212D19A23AAF1DB0F982CE_StaticFields
 {
 	// Spawner/<>c Spawner/<>c::<>9
 	U3CU3Ec_t128F854E12B07991C2212D19A23AAF1DB0F982CE* ___U3CU3E9_0;
-	// System.Predicate`1<UnityEngine.GameObject> Spawner/<>c::<>9__10_0
-	Predicate_1_t0729156EF7F8B2C367BA6C92C091D97CDEC0B53F* ___U3CU3E9__10_0_1;
+	// System.Predicate`1<UnityEngine.GameObject> Spawner/<>c::<>9__11_0
+	Predicate_1_t0729156EF7F8B2C367BA6C92C091D97CDEC0B53F* ___U3CU3E9__11_0_1;
 };
 
 // UnityEngine.TextCore.Text.SpriteAsset/<>c
@@ -25053,14 +25053,18 @@ struct Spawner_t387EDFC7BADAEFFD3305FD31D1E8DDE8998FCDD7  : public MonoBehaviour
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___puntoCentral_7;
 	// System.Single Spawner::radio
 	float ___radio_8;
-	// System.Single Spawner::intervaloGeneracion
-	float ___intervaloGeneracion_9;
-	// System.Single Spawner::tiempoUltimaGeneracion
-	float ___tiempoUltimaGeneracion_10;
+	// TMPro.TextMeshProUGUI Spawner::mensajeOleadaUI
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___mensajeOleadaUI_9;
+	// System.Single Spawner::tiempoEntreOleadas
+	float ___tiempoEntreOleadas_10;
+	// System.Single Spawner::tiempoUltimoMensaje
+	float ___tiempoUltimoMensaje_11;
 	// System.Int32 Spawner::numeroOleada
-	int32_t ___numeroOleada_11;
+	int32_t ___numeroOleada_12;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> Spawner::enemigosVivos
-	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___enemigosVivos_12;
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___enemigosVivos_13;
+	// System.Boolean Spawner::mostrandoMensaje
+	bool ___mostrandoMensaje_14;
 };
 
 // TMPro.Examples.TMP_ExampleScript_01
